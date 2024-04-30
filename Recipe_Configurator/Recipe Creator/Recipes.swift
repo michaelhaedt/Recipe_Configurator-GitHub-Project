@@ -17,8 +17,10 @@ struct Recipes: View {
     
     @State var recipeName = ""
     @State var ingredientName = ""
+    @StateObject var viewModel = ProfileModel()
     
     var body: some View {
+        
         TextField("Add a Recipe Name", text: $recipeName)
         TextField("Add an Ingredient Name", text: $ingredientName)
         
